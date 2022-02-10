@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c20485228a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style media="screen">
+      @media screen and (min-width: 800px) {
+header b
+{
+  color:black;
+  font-size:32px;
+}
+*
+{
+  font-family: Arial;
+  padding: 0;
+}
+.ustkisim
+{
+ background: dimgray;
+ padding: 20px;
+ max-height: 47px;
+ margin: auto;
+ max-width: 1200px;
+}
+.hidden
+{
+  display: none;
+}
+.ustkisim a
+{
+  text-decoration: none;
+  padding: 7px;
+  color: black;
+  font-size: 17px;
+}
+.ustkisim input
+{
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.ustkisim form
+{
+  display: block;
+  float: right;
+}
+  .ustkisim .search-container button
+{
+  border: none;
+  float: right;
+  padding: 6px;
+  margin-top: 6px;
+  padding: 6px 10px;
+  margin-top: 8px;
+  font-size: 17px;
+}
+  #button
+{
+  display: none;
+}
+.kucuk_baslik
+{
+  visibility: hidden;
+}
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .hidden
+  {
+    background: dimgray;
+    padding: 55px;
+    max-height: 137px;
+    margin: auto;
+    max-width: 1200px;
+  }
+  .hidden a
+  {
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+  }
+  .hidden .search-container button
+{
+  border: none;
+  float: right;
+  padding: 6px;
+  margin-top: 6px;
+  padding: 6px 10px;
+  margin-top: 8px;
+  font-size: 17px;
+  width: 100%;
+}
+.hidden input
+{
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 98%;
+}
+.hidden form
+{
+  display: block;
+}
+  *
+  {
+    font-family: Arial;
+    padding: 0;
+  }
+  .ustkisim
+  {
+   background: dimgray;
+   padding: 40px;
+   margin: auto;
+  }
+  .ustkisim a
+  {
+    display: none;
+  }
+  .ustkisim form
+  {
+    display: none;
+  }
+    #button
+  {
+    float: right;
+    padding: 10px 13px;
+    margin-top: -17px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border: none;
+  }
+  .kucuk_baslik
+  {
+    font-size: 33px;
+    margin-top: -81px;
+    padding: 26px;
+  }
+}
+
+    </style>
+  </head>
+
+
+  <body>
+     <header>
+
+       <nav class="ustkisim">
+          <a href="#"><b class="b">WEBPRO</b></a>
+          <a href="#">Anasayfa</a>
+          <a href="#">Giriş</a>
+          <a href="#">Hakkımda</a>
+          <a href="#">İletişim</a>
+
+          <form action="" class="hidden search-container">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit" class="button"><i class="fa fa-search"></i></button>
+          </form>
+
+          <button id="button" type="button"  class="fas fa-bars"></i>
+          </button>
+
+       </nav>
+       <nav class="kucuk_baslik">
+             <b class="b">WEBPRO</b>
+       </nav>
+       <div class="hidden" id="hidden" >
+
+         <a href="#" >Anasayfa</a><br>
+         <a href="#" >Giriş</a><br>
+         <a href="#" >Hakkımda</a><br>
+         <a href="#" >İletişim</a><br>
+
+         <form action="" class=" search-container">
+             <input type="text" placeholder="Search.." name="search">
+             <button type="submit" class="button"><i class="fa fa-search"></i></button>
+         </form>
+       </div>
+
+     </header>
+
+  </body>
+
+  <script>
+
+$("#button").click(function(){
+   $("#hidden").toggle(1000);
+});
+
+  </script>
+
+</html>
